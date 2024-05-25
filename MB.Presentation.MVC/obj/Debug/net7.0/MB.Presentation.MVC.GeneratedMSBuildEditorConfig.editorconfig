@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MB.Presentation.MVC
+build_property.RootNamespace = MB.Presentation.MVC
+build_property.ProjectDir = C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Presentation.MVC\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Presentation.MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Areas/Administrator/Pages/ArticleCategoryManagement/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxQYWdlc1xBcnRpY2xlQ2F0ZWdvcnlNYW5hZ2VtZW50XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Areas/Administrator/Pages/ArticleCategoryManagement/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxQYWdlc1xBcnRpY2xlQ2F0ZWdvcnlNYW5hZ2VtZW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Areas/Administrator/Pages/ArticleCategoryManagement/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxQYWdlc1xBcnRpY2xlQ2F0ZWdvcnlNYW5hZ2VtZW50XExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Areas/Administrator/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxQYWdlc1xFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Areas/Administrator/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxQYWdlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Areas/Administrator/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxQYWdlc1xQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Areas/Administrator/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxQYWdlc1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Areas/Administrator/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxQYWdlc1xTaGFyZWRcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Areas/Administrator/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxQYWdlc1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Areas/Administrator/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxQYWdlc1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Pages/ArticleDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZURldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/My Work/2- Programming/3- C\# Learning/1-Practise And Learning/Atria Asp.net Course/11- Master Blogger Project/MasterBlogger/MB.Presentation.MVC/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

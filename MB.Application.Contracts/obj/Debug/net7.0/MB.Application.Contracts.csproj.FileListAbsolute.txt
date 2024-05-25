@@ -1,0 +1,11 @@
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application.Contracts\bin\Debug\net7.0\MB.Application.Contracts.deps.json
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application.Contracts\bin\Debug\net7.0\MB.Application.Contracts.dll
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application.Contracts\bin\Debug\net7.0\MB.Application.Contracts.pdb
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application.Contracts\obj\Debug\net7.0\MB.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application.Contracts\obj\Debug\net7.0\MB.Application.Contracts.AssemblyInfoInputs.cache
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application.Contracts\obj\Debug\net7.0\MB.Application.Contracts.AssemblyInfo.cs
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application.Contracts\obj\Debug\net7.0\MB.Application.Contracts.csproj.CoreCompileInputs.cache
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application.Contracts\obj\Debug\net7.0\MB.Application.Contracts.dll
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application.Contracts\obj\Debug\net7.0\refint\MB.Application.Contracts.dll
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application.Contracts\obj\Debug\net7.0\MB.Application.Contracts.pdb
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application.Contracts\obj\Debug\net7.0\ref\MB.Application.Contracts.dll

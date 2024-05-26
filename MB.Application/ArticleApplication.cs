@@ -17,6 +17,14 @@ namespace MB.Application
             _articleRepository = articleRepository;
         }
 
+        public void Create(CreateArticle command)
+        {
+            var article = new Article(command.Title,command.ShortDescription,command.Image
+                ,command.Content,command.ArticleCategoryId);
+
+            _articleRepository.Create(article);
+        }
+
         public List<ArticleViewModel> GetArticles()
         {
             return _articleRepository.GetArticles();

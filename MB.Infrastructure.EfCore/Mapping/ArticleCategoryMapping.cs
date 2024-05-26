@@ -15,6 +15,12 @@ namespace MB.Infrastructure.EfCore.Mapping
         {
             builder.ToTable("ArticleCategory");
             builder.HasKey(x => x.Id);
+
+            builder
+                .HasMany(x => x.Articles)
+                .WithOne(x => x.ArticleCategory)
+                .HasForeignKey(x => x.ArticleCategoryId);
+
         }
     }
 }

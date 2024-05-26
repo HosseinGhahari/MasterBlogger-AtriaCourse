@@ -1,4 +1,5 @@
-﻿using MB.Domain.Serivce;
+﻿using MB.Domain.ArticleAgg;
+using MB.Domain.Serivce;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,12 @@ namespace MB.Domain.ArticleCategoryAgg
         public string Title { get; private set; }
         public bool IsDeleted { get; private set; }
         public DateTime CreationDate { get; private set; }
+        public ICollection<Article> Articles { get; set; }
 
+        public ArticleCategory()
+        {
+            
+        }
         public void TitleNullCheckValidation(string title)
         {
             if(string.IsNullOrWhiteSpace(title))
@@ -27,6 +33,7 @@ namespace MB.Domain.ArticleCategoryAgg
             Title = title;
             IsDeleted = false;
             CreationDate = DateTime.Now;
+            Articles = new List<Article>();
         }
 
         public void Edit(string title)

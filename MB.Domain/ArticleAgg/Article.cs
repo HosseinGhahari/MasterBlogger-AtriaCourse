@@ -19,7 +19,10 @@ namespace MB.Domain.ArticleAgg
         public long ArticleCategoryId { get; private set; }
         public ArticleCategory ArticleCategory { get; private set; }
 
-        public Article() {}
+        protected Article()
+        {
+            
+        }
 
         public Article(string title, string shortDescription, string image, string content, long articleCategoryId)
         {

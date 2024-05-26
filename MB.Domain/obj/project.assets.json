@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "MB.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/MB.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MB.Application.Contracts.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MB.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../MB.Application.Contracts/MB.Application.Contracts.csproj",
+      "msbuildProject": "../MB.Application.Contracts/MB.Application.Contracts.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "MB.Application.Contracts >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Hossein Ghahari\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\My Work\\2- Programming\\3- C# Learning\\1-Practise And Learning\\Atria Asp.net Course\\11- Master Blogger Project\\MasterBlogger\\MB.Application.Contracts\\MB.Application.Contracts.csproj": {
+              "projectPath": "C:\\My Work\\2- Programming\\3- C# Learning\\1-Practise And Learning\\Atria Asp.net Course\\11- Master Blogger Project\\MasterBlogger\\MB.Application.Contracts\\MB.Application.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

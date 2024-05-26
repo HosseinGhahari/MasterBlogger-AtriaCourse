@@ -21,9 +21,10 @@ namespace MB.Infrastructure.Config
         {
             service.AddTransient<IArticleCategoryApplication, ArticleCategoryApplication>();
             service.AddTransient<IArticleCategoryRepository, ArticleCategoryRepository>();
-            service.AddTransient<IArticleRepository, ArticleRepository>();
-            service.AddTransient<IArticleApplication, ArticleApplication>();
             service.AddTransient<IArticleCategoryValidationService, ArticleCategoryValidationService>();
+
+            service.AddTransient<IArticleApplication, ArticleApplication>();
+            service.AddTransient<IArticleRepository, ArticleRepository>();
 
 
             service.AddDbContext<MasterBloggerContext>(option => option.UseSqlServer(connection));

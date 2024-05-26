@@ -25,9 +25,30 @@ namespace MB.Application
             _articleRepository.Create(article);
         }
 
+        public void Edit(EditArticle command)
+        {
+            var article = _articleRepository.GetById(command.Id);
+            article.Edit(command.Title,command.ShortDescription,command.Image,command.Content,command.ArticleCategoryId);
+            _articleRepository.Save();
+        }
+
         public List<ArticleViewModel> GetArticles()
         {
             return _articleRepository.GetArticles();
+        }
+
+        public EditArticle GetEditDetailes(long id)
+        {
+            var article = _articleRepository.GetById(id);
+            return new EditArticle
+            {
+                Id = article.Id,
+                Title = article.Title,
+                Content = article.Content,
+                ArticleCategoryId = article.ArticleCategoryId,
+                Image = article.Image,
+                ShortDescription = article.ShortDescription,
+            };
         }
     }
 }

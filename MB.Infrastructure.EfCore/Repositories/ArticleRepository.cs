@@ -23,7 +23,7 @@ namespace MB.Infrastructure.EfCore.Repositories
         public void Create(Article entity)
         {
             _context.Articles.Add(entity);
-            _context.SaveChanges();
+            Save();
         }
 
         public List<ArticleViewModel> GetArticles()
@@ -36,6 +36,16 @@ namespace MB.Infrastructure.EfCore.Repositories
                 CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
                 IsDeleted = x.IsDeleted,
             }).ToList();
+        }
+
+        public Article GetById(long id)
+        {
+            return _context.Articles.FirstOrDefault(x => x.Id == id);
+        }
+
+        public void Save()
+        {
+            _context.SaveChanges();
         }
     }
 }

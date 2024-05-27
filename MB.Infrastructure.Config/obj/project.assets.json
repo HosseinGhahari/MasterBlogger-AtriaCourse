@@ -1039,6 +1039,19 @@
         "runtime": {
           "bin/placeholder/MB.Infrastructure.EfCore.dll": {}
         }
+      },
+      "MB.Infrastructure.Query/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MB.Infrastructure.EfCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MB.Infrastructure.Query.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MB.Infrastructure.Query.dll": {}
+        }
       }
     }
   },
@@ -2766,6 +2779,11 @@
       "type": "project",
       "path": "../MB.Infrastructure.EfCore/MB.Infrastructure.EfCore.csproj",
       "msbuildProject": "../MB.Infrastructure.EfCore/MB.Infrastructure.EfCore.csproj"
+    },
+    "MB.Infrastructure.Query/1.0.0": {
+      "type": "project",
+      "path": "../MB.Infrastructure.Query/MB.Infrastructure.Query.csproj",
+      "msbuildProject": "../MB.Infrastructure.Query/MB.Infrastructure.Query.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2773,6 +2791,7 @@
       "MB.Application.Contracts >= 1.0.0",
       "MB.Domain >= 1.0.0",
       "MB.Infrastructure.EfCore >= 1.0.0",
+      "MB.Infrastructure.Query >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 7.0.0"
     ]
   },
@@ -2817,6 +2836,9 @@
             },
             "C:\\My Work\\2- Programming\\3- C# Learning\\1-Practise And Learning\\Atria Asp.net Course\\11- Master Blogger Project\\MasterBlogger\\MB.Infrastructure.EfCore\\MB.Infrastructure.EfCore.csproj": {
               "projectPath": "C:\\My Work\\2- Programming\\3- C# Learning\\1-Practise And Learning\\Atria Asp.net Course\\11- Master Blogger Project\\MasterBlogger\\MB.Infrastructure.EfCore\\MB.Infrastructure.EfCore.csproj"
+            },
+            "C:\\My Work\\2- Programming\\3- C# Learning\\1-Practise And Learning\\Atria Asp.net Course\\11- Master Blogger Project\\MasterBlogger\\MB.Infrastructure.Query\\MB.Infrastructure.Query.csproj": {
+              "projectPath": "C:\\My Work\\2- Programming\\3- C# Learning\\1-Practise And Learning\\Atria Asp.net Course\\11- Master Blogger Project\\MasterBlogger\\MB.Infrastructure.Query\\MB.Infrastructure.Query.csproj"
             }
           }
         }

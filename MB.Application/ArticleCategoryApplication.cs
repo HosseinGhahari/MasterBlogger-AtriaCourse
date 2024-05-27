@@ -1,6 +1,6 @@
 ﻿using MB.Application.Contracts.ArticleCategory;
 using MB.Domain.ArticleCategoryAgg;
-using MB.Domain.Serivce;
+using MB.Domain.ArticleCategoryAgg.Serivce;
 using System;
 using System.Collections.Generic;
 using System.Linq;

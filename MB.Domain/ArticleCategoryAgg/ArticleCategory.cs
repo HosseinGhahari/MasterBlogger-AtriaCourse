@@ -1,5 +1,5 @@
 ﻿using MB.Domain.ArticleAgg;
-using MB.Domain.Serivce;
+using MB.Domain.ArticleCategoryAgg.Serivce;
 using System;
 using System.Collections.Generic;
 using System.Linq;

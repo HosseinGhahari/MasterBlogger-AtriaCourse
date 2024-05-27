@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MB.Domain.Serivce
+namespace MB.Domain.ArticleAgg.Service
 {
-    public interface IArticleCategoryValidationService
+    public interface IArticleValidationService
     {
         void TitleExistCheck(string title);
     }

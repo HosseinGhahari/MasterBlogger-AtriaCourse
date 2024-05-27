@@ -81,3 +81,5 @@ C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net C
 C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Presentation.MVC\obj\Debug\net7.0\MB.Presentation.MVC.pdb
 C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Presentation.MVC\obj\Debug\net7.0\MB.Presentation.MVC.genruntimeconfig.cache
 C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Presentation.MVC\obj\Debug\net7.0\ref\MB.Presentation.MVC.dll
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Presentation.MVC\bin\Debug\net7.0\MB.Infrastructure.Query.dll
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Presentation.MVC\bin\Debug\net7.0\MB.Infrastructure.Query.pdb

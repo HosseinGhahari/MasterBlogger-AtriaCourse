@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MB.Domain.Serivce
+namespace MB.Domain.ArticleCategoryAgg.Serivce
 {
     public class ArticleCategoryValidationService : IArticleCategoryValidationService
     {

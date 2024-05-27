@@ -1,4 +1,5 @@
-﻿using MB.Domain.ArticleCategoryAgg;
+﻿using MB.Domain.ArticleAgg.Service;
+using MB.Domain.ArticleCategoryAgg;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,8 +25,20 @@ namespace MB.Domain.ArticleAgg
             
         }
 
-        public Article(string title, string shortDescription, string image, string content, long articleCategoryId)
+        public static void Validate(string title , long articleCategoryId)
         {
+            if (string.IsNullOrWhiteSpace(title))
+                throw new ArgumentNullException("title is null");
+
+            if (articleCategoryId == 0)
+                throw new ArgumentNullException("id is zero");
+        }
+
+        public Article(string title, string shortDescription, string image, string content, long articleCategoryId , IArticleValidationService articleValidation)
+        {
+            Validate(title , articleCategoryId);
+            articleValidation.TitleExistCheck(title);
+
             Title = title;
             ShortDescription = shortDescription;
             Image = image;
@@ -35,14 +48,27 @@ namespace MB.Domain.ArticleAgg
             ArticleCategoryId = articleCategoryId;
         }
 
-        public void Edit(string title, string shortDescription, string image, string content, long articleCategoryId)
+        public void Edit(string title, string shortDescription, string image, string content, long articleCategoryId, IArticleValidationService articleValidation)
         {
+            Validate(title, articleCategoryId);
+
             Title = title;
             ShortDescription = shortDescription;
             Image = image;
             Content = content;
             ArticleCategoryId = articleCategoryId;
         }
+
+        public void Remove()
+        {
+            IsDeleted = true;
+        }
+
+        public void Active()
+        {
+            IsDeleted = false;
+        }
+
     }
 
 }

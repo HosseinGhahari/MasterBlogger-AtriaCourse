@@ -1,5 +1,6 @@
 ﻿using MB.Application.Contracts.Article;
 using MB.Domain.ArticleAgg;
+using MB.Domain.ArticleAgg.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,16 +12,19 @@ namespace MB.Application
     public class ArticleApplication : IArticleApplication
     {
         private readonly IArticleRepository _articleRepository;
+        private readonly IArticleValidationService _articleValidationService;
 
-        public ArticleApplication(IArticleRepository articleRepository)
+        public ArticleApplication(IArticleRepository articleRepository , IArticleValidationService articleValidationService )
         {
             _articleRepository = articleRepository;
+            _articleValidationService = articleValidationService;
         }
+
 
         public void Create(CreateArticle command)
         {
             var article = new Article(command.Title,command.ShortDescription,command.Image
-                ,command.Content,command.ArticleCategoryId);
+                ,command.Content,command.ArticleCategoryId , _articleValidationService);
 
             _articleRepository.Create(article);
         }
@@ -28,7 +32,8 @@ namespace MB.Application
         public void Edit(EditArticle command)
         {
             var article = _articleRepository.GetById(command.Id);
-            article.Edit(command.Title,command.ShortDescription,command.Image,command.Content,command.ArticleCategoryId);
+            article.Edit(command.Title,command.ShortDescription,command.Image,
+                command.Content,command.ArticleCategoryId , _articleValidationService);
             _articleRepository.Save();
         }
 
@@ -50,5 +55,20 @@ namespace MB.Application
                 ShortDescription = article.ShortDescription,
             };
         }
+
+        public void Remove(long id)
+        {
+            var article = _articleRepository.GetById(id);
+            article.Remove();
+            _articleRepository.Save();
+        }
+
+        public void Active(long id)
+        {
+            var article = _articleRepository.GetById(id);
+            article.Active();
+            _articleRepository.Save();
+        }
+
     }
 }

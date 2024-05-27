@@ -26,6 +26,11 @@ namespace MB.Infrastructure.EfCore.Repositories
             Save();
         }
 
+        public bool Exist(string titile)
+        {
+            return _context.Articles.Any(x => x.Title == titile);
+        }
+
         public List<ArticleViewModel> GetArticles()
         {
             return _context.Articles.Include(x => x.ArticleCategory).Select(x => new ArticleViewModel

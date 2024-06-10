@@ -19,7 +19,7 @@ namespace MB.Domain.CommentAgg
         public Article Article { get; private set; }
 
         protected Comment() { }
-        public Comment(string name, string email, int status, string message, long articleId)
+        public Comment(string name, string email, string message, long articleId)
         {
             Name = name;
             Email = email;

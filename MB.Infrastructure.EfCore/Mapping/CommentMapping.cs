@@ -19,7 +19,7 @@ namespace MB.Infrastructure.EfCore.Mapping
             builder
                 .HasOne(x => x.Article)
                 .WithMany(x => x.Comments)
-                .HasForeignKey(x => x.Article.Id);
+                .HasForeignKey(x => x.ArticleId);
 
         }
     }

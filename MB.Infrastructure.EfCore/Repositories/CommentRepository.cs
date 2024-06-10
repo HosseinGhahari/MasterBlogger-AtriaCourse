@@ -25,6 +25,11 @@ namespace MB.Infrastructure.EfCore.Repositories
             Save();
         }
 
+        public Comment GetById(long id)
+        {
+            return _context.Comments.FirstOrDefault(x => x.Id == id);
+        }
+
         public List<CommentViewModel> GetCommentsList()
         {
             return _context.Comments.Include(x => x.Article).Select(x => new CommentViewModel

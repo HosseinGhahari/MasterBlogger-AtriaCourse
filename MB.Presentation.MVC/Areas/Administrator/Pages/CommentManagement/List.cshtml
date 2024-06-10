@@ -46,23 +46,21 @@
                             }
                         </td>
                         <td>@comment.CreationDate</td>
-                       @*  <td>
-                             <a class="btn btn-warning float-left mr-3" asp-page="./Edit" asp-route-id="@article.Id">Edit</a>
-                            @if (article.IsDeleted)
+                         <td>
+                            @if (comment.status == Statuses.New)
                             {
-                                <form method="post" asp-page-handler="Active" class="float-left">
-                                    <button class="btn btn-success">Activate</button>
-                                    <input type="hidden" name="id" value="@article.Id" />
+                                <form method="post" asp-page-handler="Confirm" class="float-left">
+                                    <button class="btn btn-success">Confirm</button>
+                                    <input type="hidden" name="id" value="@comment.Id" />
+                                </form>
+
+                                <form method="post" asp-page-handler="Cancel" class="float-left">
+                                    <button class="btn btn-danger">Cancel</button>
+                                    <input type="hidden" name="id" value="@comment.Id" />
                                 </form>
                             }
-                            else
-                            {
-                                <form method="post" asp-page-handler="Remove" class="float-left">
-                                    <button class="btn btn-danger">Remove</button>
-                                    <input type="hidden" name="id" value="@article.Id" />
-                                </form>
-                            }
-                        </td>  *@
+
+                        </td>  
                     </tr>
                 }
             </tbody>

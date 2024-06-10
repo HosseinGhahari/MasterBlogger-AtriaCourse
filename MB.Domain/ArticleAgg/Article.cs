@@ -48,6 +48,7 @@ namespace MB.Domain.ArticleAgg
             IsDeleted = false;
             CreationDate = DateTime.Now;
             ArticleCategoryId = articleCategoryId;
+            Comments = new List<Comment>();
         }
 
         public void Edit(string title, string shortDescription, string image, string content, long articleCategoryId, IArticleValidationService articleValidation)

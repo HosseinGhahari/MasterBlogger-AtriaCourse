@@ -1,4 +1,5 @@
-﻿using MB.Infrastructure.EfCore.Context;
+﻿using MB.Domain.CommentAgg;
+using MB.Infrastructure.EfCore.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,10 @@ namespace MB.Infrastructure.Query
 
         public List<ArticleQueryView> GetArticles()
         {
-            return _context.Articles.Include(x => x.ArticleCategory).Select(x => new ArticleQueryView
+            return _context.Articles
+                .Include(x => x.ArticleCategory)
+                .Include(x => x.Comments)
+                .Select(x => new ArticleQueryView
             {
                 Id = x.Id,
                 Title = x.Title,
@@ -27,6 +31,7 @@ namespace MB.Infrastructure.Query
                 ShortDescription = x.ShortDescription,
                 ArticleCategory = x.ArticleCategory.Title,
                 CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture), 
+                CommentCount = x.Comments.Count(x => x.Status == Statuses.Confirmed),
 
             }).ToList();
         }
@@ -41,9 +46,22 @@ namespace MB.Infrastructure.Query
                 ShortDescription = x.ShortDescription,
                 ArticleCategory = x.ArticleCategory.Title,
                 CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
-                Content = x.Content
+                Content = x.Content,
+                CommentCount = x.Comments.Count(x => x.Status == Statuses.Confirmed),
+                Comments = MapComment(x.Comments.Where(z => z.Status == Statuses.Confirmed))
 
             }).FirstOrDefault(x => x.Id == id);
+        }
+
+        private static List<CommentQueryView> MapComment(IEnumerable<Comment> comments)
+        {
+            return comments.Select(x => new CommentQueryView
+            {
+                Name = x.Name,
+                CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
+                Message = x.Message,
+
+            }).ToList();
         }
     }
 }

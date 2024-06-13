@@ -16,7 +16,7 @@ namespace MB.Domain.ArticleAgg.Service
 
         public void TitleExistCheck(string title)
         {
-            if(_articleRepository.Exist(title)) 
+            if(_articleRepository.Exist(x =>x.Title == title)) 
                 throw new DuplicateWaitObjectException();
         }
     }

@@ -34,7 +34,7 @@ namespace MB.Application
             var article = _articleRepository.GetById(command.Id);
             article.Edit(command.Title,command.ShortDescription,command.Image,
                 command.Content,command.ArticleCategoryId , _articleValidationService);
-            _articleRepository.Save();
+            //_articleRepository.Save();
         }
 
         public List<ArticleViewModel> GetArticles()
@@ -60,14 +60,14 @@ namespace MB.Application
         {
             var article = _articleRepository.GetById(id);
             article.Remove();
-            _articleRepository.Save();
+            //_articleRepository.Save();
         }
 
         public void Active(long id)
         {
             var article = _articleRepository.GetById(id);
             article.Active();
-            _articleRepository.Save();
+            //_articleRepository.Save();
         }
 
     }

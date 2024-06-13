@@ -1,4 +1,5 @@
-﻿using MB.Application.Contracts.Comment;
+﻿using _01_Framework.Infrastructure;
+using MB.Application.Contracts.Comment;
 using MB.Domain.CommentAgg;
 using MB.Infrastructure.EfCore.Context;
 using Microsoft.EntityFrameworkCore;
@@ -11,24 +12,14 @@ using System.Threading.Tasks;
 
 namespace MB.Infrastructure.EfCore.Repositories
 {
-    public class CommentRepository : ICommentRepository
+    public class CommentRepository : BaseRepository<long,Comment> , ICommentRepository
     {
         private readonly MasterBloggerContext _context;
-        public CommentRepository(MasterBloggerContext context)
+        public CommentRepository(MasterBloggerContext context) : base(context) 
         {
             _context = context;
         }
 
-        public void Add(Comment entity)
-        {
-            _context.Add(entity);
-            Save();
-        }
-
-        public Comment GetById(long id)
-        {
-            return _context.Comments.FirstOrDefault(x => x.Id == id);
-        }
 
         public List<CommentViewModel> GetCommentsList()
         {
@@ -45,9 +36,5 @@ namespace MB.Infrastructure.EfCore.Repositories
             }).ToList();
         }
 
-        public void Save()
-        {
-            _context.SaveChanges();
-        }
     }
 }

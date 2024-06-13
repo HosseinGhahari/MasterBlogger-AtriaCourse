@@ -29,20 +29,20 @@ namespace MB.Application
         {
             var article = _articleCategoryRepository.GetById(command.Id);
             article.Edit(command.Title);
-            _articleCategoryRepository.Save();
+           //_articleCategoryRepository.Save();
         }
 
         public void Active(long id)
         {
             var article = _articleCategoryRepository.GetById(id);
             article.Active();
-            _articleCategoryRepository.Save();
+            //_articleCategoryRepository.Save();
         }
         public void Remove(long id)
         {
             var article = _articleCategoryRepository.GetById(id);
             article.Remove();
-            _articleCategoryRepository.Save();
+            //_articleCategoryRepository.Save();
         }
 
         public List<ArticleCategoryViewModel> GetArticleCategories()
@@ -56,7 +56,7 @@ namespace MB.Application
                 IsDeleted = x.IsDeleted,
                 CreationDate = x.CreationDate.ToString()
 
-            }).ToList();
+            }).OrderByDescending(x => x.Id).ToList();
         }
 
         public EditArticleCategory GetEditDetailes(long id)

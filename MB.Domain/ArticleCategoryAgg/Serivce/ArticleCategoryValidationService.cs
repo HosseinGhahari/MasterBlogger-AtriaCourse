@@ -16,7 +16,7 @@ namespace MB.Domain.ArticleCategoryAgg.Serivce
         }
         public void TitleExistCheck(string title)
         {
-            if (_articleCategoryRepository.Exist(title))
+            if (_articleCategoryRepository.Exist(x=>x.Title == title))
                 throw new ArgumentNullException("Title Already Exists");
         }
     }

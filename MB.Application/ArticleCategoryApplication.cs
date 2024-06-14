@@ -1,4 +1,5 @@
-﻿using MB.Application.Contracts.ArticleCategory;
+﻿using _01_Framework;
+using MB.Application.Contracts.ArticleCategory;
 using MB.Domain.ArticleCategoryAgg;
 using MB.Domain.ArticleCategoryAgg.Serivce;
 using System;
@@ -13,36 +14,46 @@ namespace MB.Application
     {
         private readonly IArticleCategoryRepository _articleCategoryRepository;
         private readonly IArticleCategoryValidationService _articleCategoryValidationService;
-        public ArticleCategoryApplication(IArticleCategoryRepository articleCategoryRepository , IArticleCategoryValidationService articleCategoryValidationService )
+        private readonly IUnitOfWork _unitOfWork;
+
+        public ArticleCategoryApplication(IArticleCategoryRepository articleCategoryRepository 
+            , IArticleCategoryValidationService articleCategoryValidationService
+            , IUnitOfWork unitOfWork)
         {
             _articleCategoryRepository = articleCategoryRepository;
             _articleCategoryValidationService = articleCategoryValidationService;
+            _unitOfWork = unitOfWork;
         }
 
         public void Create(CreateArticleCategory command)
         {
+            _unitOfWork.BeginTran();
             var articlecategory = new ArticleCategory(command.Title,_articleCategoryValidationService);
-            _articleCategoryRepository.Create(articlecategory);     
+            _articleCategoryRepository.Create(articlecategory);   
+            _unitOfWork.CommitTran();
         }
 
         public void Edit(EditArticleCategory command)
         {
+            _unitOfWork.BeginTran();
             var article = _articleCategoryRepository.GetById(command.Id);
             article.Edit(command.Title);
-           //_articleCategoryRepository.Save();
+            _unitOfWork.CommitTran();
         }
 
         public void Active(long id)
         {
+            _unitOfWork.BeginTran();
             var article = _articleCategoryRepository.GetById(id);
             article.Active();
-            //_articleCategoryRepository.Save();
+            _unitOfWork.CommitTran();
         }
         public void Remove(long id)
         {
+            _unitOfWork.BeginTran();
             var article = _articleCategoryRepository.GetById(id);
             article.Remove();
-            //_articleCategoryRepository.Save();
+            _unitOfWork.CommitTran();
         }
 
         public List<ArticleCategoryViewModel> GetArticleCategories()

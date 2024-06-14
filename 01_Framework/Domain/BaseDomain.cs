@@ -8,7 +8,7 @@ namespace _01_Framework.Domain
 {
     public class BaseDomain<T>
     {
-        public long Id { get; set; }
+        public T Id { get; set; }
         public DateTime CreationDate { get; set; }
 
         public BaseDomain()

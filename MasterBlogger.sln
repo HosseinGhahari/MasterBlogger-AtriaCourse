@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MB.Infrastructure.Config", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MB.Infrastructure.Query", "MB.Infrastructure.Query\MB.Infrastructure.Query.csproj", "{2CDEB64F-C7C7-4816-B57B-96B02F423EDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Framework", "01_Framework\01_Framework.csproj", "{3D22A1DC-637D-4961-A0D0-5037C3C7354F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Framework", "01_Framework\01_Framework.csproj", "{3D22A1DC-637D-4961-A0D0-5037C3C7354F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

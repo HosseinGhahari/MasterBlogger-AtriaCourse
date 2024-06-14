@@ -15,3 +15,5 @@ C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net C
 C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application\obj\Debug\net7.0\refint\MB.Application.dll
 C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application\obj\Debug\net7.0\MB.Application.pdb
 C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application\obj\Debug\net7.0\ref\MB.Application.dll
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application\bin\Debug\net7.0\01_Framework.dll
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Application\bin\Debug\net7.0\01_Framework.pdb

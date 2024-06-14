@@ -13,3 +13,5 @@ C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net C
 C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Domain\obj\Debug\net7.0\refint\MB.Domain.dll
 C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Domain\obj\Debug\net7.0\MB.Domain.pdb
 C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Domain\obj\Debug\net7.0\ref\MB.Domain.dll
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Domain\bin\Debug\net7.0\01_Framework.dll
+C:\My Work\2- Programming\3- C# Learning\1-Practise And Learning\Atria Asp.net Course\11- Master Blogger Project\MasterBlogger\MB.Domain\bin\Debug\net7.0\01_Framework.pdb

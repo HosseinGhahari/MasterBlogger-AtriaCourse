@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace _01_Framework.Infrastructure
 {
-    public class BaseRepository<TKey, TValue> : IRepository<TKey, TValue> where TValue : class
+    public class BaseRepository<TKey, TValue> : IRepository<TKey, TValue> where TValue : BaseDomain<TKey>
     {
         private readonly DbContext _context;
         public BaseRepository(DbContext context)

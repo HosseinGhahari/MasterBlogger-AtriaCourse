@@ -7,7 +7,7 @@
   Onion Architecture and Clean Code practices. </p>
 
 <h2>Features</h2> 
-<p style="font-size:16px;">🔹Comment Management : Manage Users Comments Before Publishing Via Confirm And Canceling Them/p>
+<p style="font-size:16px;">🔹Comment Management : Manage Users Comments Before Publishing Via Confirm And Canceling Them</p>
 <p style="font-size:16px;">🔹Article : Create And Manage Your Articles In The Website</p>
 <p style="font-size:16px;">🔹Comments : Users Can Add Comments in Articles</p>
 <p style="font-size:16px;">🔹Article Category : Every Article Has Their Unique Category And Can Be Managed </p>
